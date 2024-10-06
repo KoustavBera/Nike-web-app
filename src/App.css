@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+}
+nav ul li:hover {
+  border-bottom: 2px solid red;
+  color: red;
+  cursor: pointer;
+}
+.login-btn {
+  background-color: red;
+  /* all: unset; */
+  padding: 6px 16px;
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background-color: rgb(194, 0, 0);
+}
+/* -----------------Hero----------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+}
+.hero h1 {
+  font-size: 108px;
+  font-weight: 800;
+  line-height: 102px;
+}
+.hero p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(157, 141, 141);
+  max-width: 400px;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.category-btn {
+  background-color: transparent;
+  /* all: unset; */
+  padding: 6px 16px;
+  height: 32px;
+  color: rgba(134, 46, 46, 0.736);
+  font-weight: 500;
+  border: 3px solid rgba(134, 46, 46, 0.736);
+  border-radius: 7px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.shopping-websites {
+  display: flex;
+  gap: 30px;
+}
+.shopping-websites img {
+  margin-top: 20px;
+}
+.hero-btn button {
+  font-size: 24px;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.category-btn:hover {
+  background: linear-gradient(
+    100deg,
+    rgba(159, 44, 44, 0.848),
+    rgb(134, 46, 46)
+  );
+  color: white;
+  cursor: pointer;
+}
